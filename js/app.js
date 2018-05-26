@@ -38,8 +38,6 @@ function makeLocation(){
     new CreateLoc('Capitol Hill', 20, 38, 2.3);
     new CreateLoc('Alki', 2, 16, 4.6);
 };
-console.log(allLocations[0].totalDailyCookiesSold);
-console.log(allLocations[0].cookiesSoldHourly);
 function makeHeadRow(){
     var cookiesTable = document.getElementById('cookies-data');
     var trEl = document.createElement('tr');
