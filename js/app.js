@@ -38,23 +38,8 @@ function makeLocation(){
     new CreateLoc('Capitol Hill', 20, 38, 2.3);
     new CreateLoc('Alki', 2, 16, 4.6);
 };
-//makeLocation();
-//codes above output is correct
-// create a loop to print out the allLocation
-//create a table 
-function makeItRun(){
-    makeLocation();
-    for(var m = 0; m < allLocations.length; m++){
-    allLocations[m].calcRandomCustHourly();
-    allLocations[m].calcCookiesSoldHourly();
-    allLocations[m].calcTotalDailyCookiesSold();
-    }
-}
-makeItRun();
-
 console.log(allLocations[0].totalDailyCookiesSold);
 console.log(allLocations[0].cookiesSoldHourly);
-//
 function makeHeadRow(){
     var cookiesTable = document.getElementById('cookies-data');
     var trEl = document.createElement('tr');
@@ -91,19 +76,7 @@ function storeData(){
             }
         }
     }
-    // var trEl = document.createElement('tr');
-    // cookiesTable.appendChild(trEl);
-    // var tdEl = document.createElement('td');
-    // cookiesTable.appendChild(tdEl);
-    // tdEl.textContent = 'Hourly Total';
-    // //here
-    // for(var k =0; k < storeHours.length; k++){
-    //     tdEl = document.createElement('td');
-    //     cookiesTable.appendChild(tdEl);
-    // }
 }
-storeData();
-
 function totalRow(){
     var cookiesTable = document.getElementById('cookies-data');
     var trEl = document.createElement('tr');
@@ -126,47 +99,16 @@ function totalRow(){
     tdEl = document.createElement('td');
     cookiesTable.appendChild(tdEl);
     tdEl.textContent = dailyTotal;
-    //console.log(dailyTotal);
-
-    //HERERERERE draft calculate numbers completed
-    // for(var k =0; k < storeHours.length; k++){
-    //     tdEl = document.createElement('td');
-    //     cookiesTable.appendChild(tdEl);
-    // }
 }
-totalRow();
-
-
-
-
-
-
-// CreateLoc.prototype.makeItRun = function(){
-//     this.calcRandomCustHourly();
-//     this.calcCookiesSoldHourly();
-//     this.calcTotalDailyCookiesSold();
-// }
-// CreateLoc.makeItRun();
-// }
-// render: function(){
-//         this.calcRandomCustHourly();
-//         this.calcCookiesSoldHourly();
-//         this.calcTotalDailyCookiesSold();
-// }
-// render();
-//         var hourlyCookiesSold = document.getElementById('hourlyCookiesSold'); // ul list
-//         var storeName = document.getElementById('storeName'); // h2
-//         var h2Element = document.createElement('h2');
-//         h2Element.textContent = this.storeName;
-//         storeName.appendChild(h2Element);
-//         for(var l = 0; l < storeHours.length; l++){
-//             var liElement = document.createElement('li');
-//             liElement.textContent = storeHours[l]+ ': '+ this.cookiesSoldHourly[l]+ ' cookies';
-//             console.log(liElement);
-//             hourlyCookiesSold.appendChild(liElement);
-//         }
-//         console.log(this.totalCookies);
-//         document.write('Total Cookies Sold Today: '+ this.totalCookies);
-//     }
-// }
-// pikeStore.render();
+function makeItRun(){
+    makeLocation();
+    for(var m = 0; m < allLocations.length; m++){
+    allLocations[m].calcRandomCustHourly();
+    allLocations[m].calcCookiesSoldHourly();
+    allLocations[m].calcTotalDailyCookiesSold();
+    }
+    makeHeadRow();
+    storeData();
+    totalRow();
+}
+makeItRun();
