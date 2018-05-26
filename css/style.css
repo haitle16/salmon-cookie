@@ -1,3 +1,32 @@
 *{
-    background-color: skyblue;
+    background-color: rgb(247, 204, 155);
+    font-family: 
+}
+table{
+    border: solid black 1px;
+    border-collapse: collapse;
+    empty-cells: hide;
+}
+th:nth-child(even){
+    background-color: rgb(192, 243, 235);
+}
+th{
+    background-color: lightyellow;
+    border: solid black 1px;
+    padding: 5px;
+}
+td{
+    text-align: center;
+    height: 25px;
+    border: solid black 1px;
+    background-color: rgb(214, 207, 207);
+}
+td:nth-child(even){
+    background-color: rgb(252, 227, 227);
+}
+input{
+    background-color: white;
+}
+button{
+    background-color: white;
 }
