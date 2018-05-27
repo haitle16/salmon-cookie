@@ -134,4 +134,4 @@ function makeItRun(){
     storeData();
     totalRow();
 }
-makeItRun();
+makeItRun(); 
