@@ -1,6 +1,6 @@
 *{
-    background-color: rgb(247, 204, 155);
-    font-family: 
+    background-color: #b2b2b2;
+    /* background: url(http://www.smarriott.co.uk/wp-content/uploads/2013/09/Elegant_Background-3.jpg) */
 }
 table{
     border: solid black 1px;
@@ -66,3 +66,7 @@ p{
     font-size: 30px;
     color: rgb(43, 10, 0);
 }
+#cookies-data{
+    margin: 0px auto;
+}
+/* MAIN */

@@ -12,6 +12,7 @@ function CreateLoc(storeName, minCustHourly, maxCustHourly, avgCookiesSoldPerCus
     this.cookiesSoldHourly= [];
     this.totalDailyCookiesSold = 0;
     allLocations.push(this);
+    console.log(this);
 }
 CreateLoc.prototype.calcRandomCustHourly = function(){
     for (var i = 0; i < storeHours.length; i++){
