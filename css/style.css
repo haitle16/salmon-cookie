@@ -31,7 +31,7 @@ input{
 button{
     background-color: white;
 }
-img{
+#cookies{
     width: 600px;
     align-self: center;
 }
@@ -62,11 +62,62 @@ img{
     background-color: #4CAF50;
     color: white;
 }
-p{
+/* MAIN */
+section div{
     font-size: 30px;
     color: rgb(43, 10, 0);
+
 }
-#cookies-data{
+section #cookies{
+    margin-top: 15spx;
+    float: left;
+}
+
+#images{
+    display: inline-block;
     margin: 0px auto;
 }
-/* MAIN */
+main{
+    margin-top: 50px;
+}
+main img{
+    float: right;
+}
+main p{
+    font-size: 25px;
+}
+h2{
+    font-size: 35px;
+}
+#hours{
+    text-align: center; 
+    font-size: 35px;
+}
+#family img{
+    /* margin-top: 25px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%; 
+}
+#family p{
+    margin-top: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%; 
+    font-size: 30px;
+}
+#shirt img{
+    display: block;
+    float: left;
+    width: 40%; 
+}
+#shirt p{
+    height: 320px;
+    overflow: auto;
+    font-size: 18px;
+    line-height: 24px;
+    font-style: italic;
+    padding-left: 20px;
+}
